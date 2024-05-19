@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+}
+/* Gaya kustom untuk navbar */
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Efek hover: garis merah muncul di bawah link */
+.nav-link:hover {
+    color: #fff; /* Mengubah warna teks jika diperlukan */
+    background-color: transparent;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #699BBC; /* Warna garis */
+    transition: all 0.3s ease;
+}
+
+/* Menambahkan garis di bawah link yang aktif secara default */
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #699BBC; /* Warna garis */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.navbar {
+    background-color: black;
+}
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Gaya tambahan untuk memastikan ikon toggler terlihat pada latar belakang gelap */
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+}
+.body {
+    font-family: 'Palanquin', serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+
+  /* General Styles */
+.about {
+    margin-left: 10rem;
+}
+
+.kiri {
+    background-color: #0D354F;
+}
+
+.kontenkiri {
+    margin: 5rem;
+}
+
+.kiri p {
+    font-size: 20px;
+    text-align: justify;
+    color: white; 
+}
+
+.gambarabout {
+    margin-top: -200px;
+}
+
+/* SECTION 2 */
+
+.kontenkanan {
+    margin: 0 5rem 5rem 5rem;
+    font-size: 20px;
+    text-align: justify;
+    color: white; 
+}
+.tokopedia {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold;
+}
+.section2 img {
+    width: 900px;
+    
+}
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: black;
+    color: white;
+}
+
+
+/* Overlay CSS */
+/* .splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('asset/background.png') center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.splash-content {
+    text-align: center;
+    color: white;
+}
+
+.splash-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.splash-screen {
+    animation: fadeOut 3s ease 3s forwards;
+} */
